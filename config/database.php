@@ -10,12 +10,12 @@ return [
     |--------------------------------------------------------------------------
     |
     | Here you may specify which of the database connections below you wish
-    | to use as your default connection for all database work. Of course
+    | to use as your layouts connection for all database work. Of course
     | you may use many connections at once using the Database library.
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'layouts' => env('DB_CONNECTION', 'mysql'),
 
     /*
     |--------------------------------------------------------------------------
@@ -126,7 +126,7 @@ return [
             'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_database_'),
         ],
 
-        'default' => [
+        'layouts' => [
             'url' => env('REDIS_URL'),
             'host' => env('REDIS_HOST', '127.0.0.1'),
             'password' => env('REDIS_PASSWORD', null),
